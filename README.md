@@ -3,16 +3,8 @@
 - `npm start`
 - pull up `http://localhost:3000`
 
-## A note about module versions
-I generally try to pin the critical packages in package.json to exact version numbers.
-That should ensure that things should work for you even if the React apis change significantly
-in future versions. If future versions of React are released, you can continue using the pinned
-versions in these files, or you can try to upgrade and follow the migration docs that React usually
-has with big api changes.
+## App notes
+This app converts currencies between USD, EUR, and JPY.  The primary purpose of this app was for me to learn Redux, so feel free to make best practice pull requests if you work from this project.
 
-You can check the readme at https://github.com/jamischarles/ps_redux-demos for any major updates.
+Credit to Jamis Charles from Pluralsight for most of the code.  I made my own style preference changes (in the spirit of learning Redux with as little React as possible).  I followed his tutorial and highly recommend his class if you have a subscription.  Here's his codebase: https://github.com/jamischarles/ps_redux-demos
 
-## Other code changes after recording
-After recording, I added the following line to `webpack.config.js` to enable source maps. This makes debugging in chrome devtools
-much easier.
-`devtool: "source-map",`
